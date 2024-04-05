@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* 옵션 */
+  /* outline-style: none; */
+}
+html {
+}
+/* 글꼴이 두개 들어갈 때 우선순위를 생각하고 배치를 해야함 */
+/* inter는 영어만 지원하기 때문에 아래처럼 배치 가능 */
+/* noto sans 는 한글만! */
+body {
+  font-family: "Inter", "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.wrap {
+}
