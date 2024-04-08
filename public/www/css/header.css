@@ -63,7 +63,7 @@
 }
 
 .navi-search a:hover {
-  background: url("../images/icon/icon-search-hover.png.png") no-repeat center;
+  background: url("../images/icon/icon-search-hover.png") no-repeat center;
   background-size: contain;
 }
 
