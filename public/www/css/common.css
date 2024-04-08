@@ -18,5 +18,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+/* 모서리 둥굴게 휨새 주는 태그 - 전체적으로 재활용해야하는
+코드라서 미리 넣고 class 명에 br-20만 넣어주면 편하다옹 */
+.br-20 {
+  border-radius: 20px;
+}
 .wrap {
 }
