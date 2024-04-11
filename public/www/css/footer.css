@@ -1,0 +1,26 @@
+.footer {
+}
+.footer .inner {
+}
+/* 하단 위쪽 영역 */
+.footer-top {
+  background: #1e1e1e;
+  padding: 30px 0;
+}
+.footer-top-info {
+}
+.footer-top-sitemap {
+}
+@media all and (max-width: 1024px) {
+}
+/* 하단 아래 영역 */
+.footer-bottom {
+  background: #191919;
+  padding: 30px 0;
+}
+.footer-bottom-copyright {
+}
+.footer-bottom-sns {
+}
+@media all and (max-width: 1024px) {
+}

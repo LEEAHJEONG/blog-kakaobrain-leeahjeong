@@ -7,7 +7,15 @@
   /* 옵션 */
   /* outline-style: none; */
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
 html {
+  /* 최대로 줄였을 때 아래에 스크롤바가 생겨서 없앴음. */
+  /* overflow 전체에 hidden을 넣으면 전체가 무너질 가능성이 있어서 */
+  /* x축만 넣어주었음. */
+  overflow-x: hidden;
 }
 /* 글꼴이 두개 들어갈 때 우선순위를 생각하고 배치를 해야함 */
 /* inter는 영어만 지원하기 때문에 아래처럼 배치 가능 */
@@ -23,5 +31,28 @@ body {
 .br-20 {
   border-radius: 20px;
 }
+.bt-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 60px;
+}
+.bt-more {
+  display: block;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 11px 20px;
+  line-height: 20px;
+  transition: all 0.1s;
+}
+.bt-more:hover {
+  background: #000;
+  color: #fff;
+}
+
 .wrap {
 }
