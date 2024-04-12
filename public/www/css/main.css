@@ -97,6 +97,7 @@
     display: none;
   }
 }
+
 /* 메인 하단 영역 */
 .main-bottom {
   display: flex;
@@ -123,11 +124,7 @@
   width: 30%;
   margin-bottom: 30px;
 }
-.list-box:hover .list-box-img {
-  transform: translateY(-10px);
-  /* 호버 시 그림자효과 */
-  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.2));
-}
+
 .list-box-img {
   width: 100%;
 
@@ -137,6 +134,11 @@
   overflow: hidden;
   margin-bottom: 24px;
   transition: all 0.2s ease-in;
+}
+.list-box:hover .list-box-img {
+  transform: translateY(-10px);
+  /* 호버 시 그림자효과 */
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.2));
 }
 .list-box-cate {
   display: flex;
@@ -208,11 +210,11 @@
     max-width: 100%;
   }
 }
+/* 메인 카드 영역 */
 .main-bottom-cards {
   width: 25.64%;
   max-width: 300px;
 }
-/* 메인 카드 영역 */
 
 /* 가로가 변하면 %, 세로가 변하면 vw */
 .card-link {
