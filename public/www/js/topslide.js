@@ -46,6 +46,14 @@ window.addEventListener("load", function () {
           clickable: true,
         },
       });
+      // const mainTopSlide = document.querySelector(".main-top-slide");
+
+      // mainTopSlide.addEventListener("mouseenter", () => {
+      //   topSlide.autoplay.stop();
+      // });
+      // mainTopSlide.addEventListener("mouseleave", () => {
+      //   topSlide.autoplay.start();
+      // });
     })
     .catch((error) => {
       console.log(error);
