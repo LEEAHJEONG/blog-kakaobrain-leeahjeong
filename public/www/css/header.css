@@ -2,12 +2,13 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 99999;
+
+  z-index: 999999;
   display: block;
   width: 100%;
   height: 70px;
   background-color: #ffffff;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ffffff;
 }
 .line-active {
   border-bottom: 1px solid #e6e5e6 !important;
@@ -17,6 +18,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   width: calc(100% - 30px);
   max-width: 1170px;
   height: 70px;
@@ -33,7 +35,7 @@
 .header-logo-img {
   width: 88px;
   height: 22px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .header-logo-slide {
   width: 68px;
@@ -44,8 +46,9 @@
   height: 100%;
 }
 .swlogo .swiper-slide {
-  background: #fff;
+  background: #ffffff;
 }
+
 .header-logo-slide img {
   width: 100%;
 }
@@ -91,6 +94,10 @@
   background: url("../images/icon/icon-hbr.png") no-repeat center;
   background-size: contain;
 }
+.mobile-menu-open {
+  background: url("../images/icon/icon-close.png") no-repeat center !important;
+  background-size: contain !important;
+}
 
 /* 반응형 */
 @media all and (max-width: 1024px) {
@@ -104,4 +111,62 @@
   .navi-search {
     display: block !important;
   }
+}
+
+/* 모바일 메뉴 관련 */
+/* 모바일 메뉴 : 배경 */
+.mb-header-bg {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+.mb-header-bg-show {
+  display: block !important;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+/* 모바일 메뉴 : 내용 */
+.mb-header-menu {
+  position: fixed;
+  left: 0;
+  top: calc(70px - 1px);
+
+  width: 100%;
+  height: 0;
+  transition: height 0.3s ease-in;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 1);
+  z-index: 9999999;
+}
+.mb-header-menu-show {
+  height: 160px !important;
+}
+.mb-header-menu .inner {
+  display: block;
+  height: auto !important;
+}
+
+.mb-nav {
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+.mb-nav li {
+  line-height: 40px;
+}
+.mb-nav li a {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+.mb-nav li a:hover {
+  color: #1f24ff;
 }
