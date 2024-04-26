@@ -46,15 +46,17 @@ window.addEventListener("load", function () {
           clickable: true,
         },
       });
-      // const mainTopSlide = document.querySelector(".main-top-slide");
+      // 4. 마우스 오버시 슬라이드를 일시 멈춤 및 재실행
+      const slideArea = document.querySelector(".main-top-slide");
 
-      // mainTopSlide.addEventListener("mouseenter", () => {
-      //   topSlide.autoplay.stop();
-      // });
-      // mainTopSlide.addEventListener("mouseleave", () => {
-      //   topSlide.autoplay.start();
-      // });
+      slideArea.addEventListener("mouseenter", () => {
+        topSlide.autoplay.stop();
+      });
+      slideArea.addEventListener("mouseleave", () => {
+        topSlide.autoplay.start();
+      });
     })
+
     .catch((error) => {
       console.log(error);
     });
