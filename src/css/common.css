@@ -6,7 +6,7 @@
   padding: 0px;
   box-sizing: border-box;
   /* 옵션 */
-  outline-style: none;
+  /* outline-style: none; */
 }
 a {
   color: #000;
@@ -16,7 +16,7 @@ html {
   /* 최대로 줄였을 때 아래에 스크롤바가 생겨서 없앴음. */
   /* overflow 전체에 hidden을 넣으면 전체가 무너질 가능성이 있어서 */
   /* x축만 넣어주었음. */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 /* 글꼴이 두개 들어갈 때 우선순위를 생각하고 배치를 해야함 */
 /* inter는 영어만 지원하기 때문에 아래처럼 배치 가능 */

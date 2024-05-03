@@ -1,0 +1,8 @@
+.main {
+}
+/* .inner 앞에 뛰어써야 메인 밑에 속해있는 inner 를 찾는다. */
+/*  뛰어쓰기를 안하면 main inner라는 이름 자체로 인식함. */
+.main .inner {
+  height: auto;
+  display: block;
+}
